@@ -1,0 +1,41 @@
+
+<div class="container vh-100">
+    <div class="row justify-content-center h-100">
+        <div class="card my-auto shadow">
+            <div class="card-body px-5">
+                <div class="text-center">
+                   
+                </div>
+                <div class="text-center">
+                    <h2>Welcome</h2>
+                </div>
+                <p style="color: lightslategray; text-align: center;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your 
+                    details to register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <form [formGroup]="addForm" (ngSubmit)="additems()" >
+                    <div class="form-group">
+                        <input type="name" id="fruit" placeholder="Enter fruit Name" class="form-control" formControlName="fruitName"
+                            name="fruitName"  required/>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="message" id="last" placeholder="enter description" class="form-control" formControlName="description"
+                            name="decription"  required/>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="file" id="file" placeholder="upload file" class="form-control" formControlName="file"
+                            name="file"  required/>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="date" id="date" placeholder="Date" class="form-control"
+                            formControlName="date" name="date" required />
+                    </div>
+                    <br>
+                    <input type="submit" class="btn btn-primary w-100" value="Add items" name="">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

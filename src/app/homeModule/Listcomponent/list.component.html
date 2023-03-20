@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Item Name</th>
+        <th>Item Description</th>
+        <th>Item Date</th>
+        <th>view</th>
+        <th>edit</th>
+        <th>delete</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of items">
+      <tr >
+        <th >{{item.fruitName}}</th>
+        <th>{{item.description}}</th>
+        <th>{{item.date}}</th>
+        <th><button class="btn btn-primary" (click)="view(item)">view</button></th>
+        <th><button class="btn btn-primary">edit</button></th>
+        <th><button class="btn btn-primary" (click)='delete(item)'>delete</button></th>
+      </tr>
+    </tbody>
+  </table>

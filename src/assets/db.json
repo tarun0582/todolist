@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "fruitName": "apple",
+      "description": "shimala",
+      "file": "C:\\fakepath\\t.jpg",
+      "date": "2023-03-18",
+      "id": 1
+    },
+    {
+      "fruitName": "apple",
+      "description": "india",
+      "file": "C:\\fakepath\\punches.json",
+      "date": "2023-03-09",
+      "id": 2
+    }
+  ]
+}
