@@ -5,7 +5,6 @@ import { HomeComponent } from './Homecomponent/home.component';
 import { ListComponent } from './Listcomponent/list.component';
 import { UpdateComponent } from './Update/update.component';
 
-
 const routes: Routes = [
     {
         path: '',

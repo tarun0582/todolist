@@ -17,14 +17,13 @@ export class TodoserviceService {
   viewItems(){
     return this.http.get(`${baseUrl}`)
   }
-  deleteItems(data:any){
-    return this.http.delete(`${baseUrl}/${data}`)
+  deleteItems(id:string){
+    return this.http.delete(`${baseUrl}/${id}`)
   }
   getCurrentData(data:any){
     return this.http.get(`${baseUrl}/${data}`)
   }
   updateItems(id:any,data:any){
-    return this.http.get(`${baseUrl}/${id}`,data)
-
+    return this.http.put(`${baseUrl}/${id}`,data)
   }
 }

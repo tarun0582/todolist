@@ -41,7 +41,6 @@ export class ListComponent {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log(data.id)
         this.todoData.deleteItems(data.id).subscribe((res: any) => {
           this.todoData.viewItems().subscribe((res: any) => {
             this.items = res;

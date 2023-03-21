@@ -16,7 +16,7 @@ export class AddComponent {
     file:new FormControl(''),
     date:new FormControl(''),
   });
-  constructor(private todoData:TodoserviceService) {
+  constructor(private todoData:TodoserviceService,private routes:Router) {
   }
   additems(){
     Swal.fire({
@@ -31,6 +31,7 @@ export class AddComponent {
           this.todoData.addItems(this.addForm.value).subscribe((res:any)=>{
             this.addForm.reset();
           })
+          this.routes.navigateByUrl("/home/list")
         } else if (result.isDenied) {
           Swal.fire('Changes are not saved', '', 'info')
         }
