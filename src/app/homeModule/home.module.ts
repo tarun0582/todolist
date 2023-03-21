@@ -7,9 +7,10 @@ import { AddComponent } from './Addcomponent/add.component';
 import { HeaderComponent } from './Header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UpdateComponent } from './Update/update.component';
 
 @NgModule({
-  declarations: [HomeComponent,ListComponent,AddComponent,HeaderComponent],
+  declarations: [HomeComponent,ListComponent,AddComponent,HeaderComponent,UpdateComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

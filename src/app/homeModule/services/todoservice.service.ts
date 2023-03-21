@@ -20,4 +20,11 @@ export class TodoserviceService {
   deleteItems(data:any){
     return this.http.delete(`${baseUrl}/${data}`)
   }
+  getCurrentData(data:any){
+    return this.http.get(`${baseUrl}/${data}`)
+  }
+  updateItems(id:any,data:any){
+    return this.http.get(`${baseUrl}/${id}`,data)
+
+  }
 }

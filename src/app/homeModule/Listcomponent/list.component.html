@@ -15,7 +15,7 @@
         <th>{{item.description}}</th>
         <th>{{item.date}}</th>
         <th><button class="btn btn-primary" (click)="view(item)">view</button></th>
-        <th><button class="btn btn-primary">edit</button></th>
+        <th><button class="btn btn-primary" (click)="update(item)">edit</button></th>
         <th><button class="btn btn-primary" (click)='delete(item)'>delete</button></th>
       </tr>
     </tbody>
